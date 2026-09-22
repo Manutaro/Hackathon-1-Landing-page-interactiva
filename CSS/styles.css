@@ -1,0 +1,105 @@
+:root {
+    /* Paleta Oficial */
+    --rosa-mexicano: #E4007C;  /* Protagonista y acentos neón */
+    --azul-profundo: #0A2342;  /* Fondo principal y tarjetas */
+    --dorado-metalico: #D4AF37;/* Detalle premium */
+    --verde-jade: #007A5E;     /* Etiquetas y distintivos */
+    --blanco-puro: #FFFFFF;    /* Textos principales */
+    --gris-grafito: #2C2C2C;   /* Soporte neutro */
+    
+    /* Tipografías Oficiales */
+    --font-titulares: 'Montserrat', sans-serif; /* ExtraBold */
+    --font-subtitulos: 'Raleway', sans-serif;    /* SemiBold */
+    --font-parrafos: 'Lato', sans-serif;         /* Regular */
+
+
+
+}
+/*Scroll Suave*/
+html {
+    scroll-behavior: smooth;
+}
+/* Base general */
+body {
+    background-color: var(--gris-grafito);
+    color: var(--blanco-puro);
+    font-family: var(--font-parrafos);
+}
+
+/* Clases tipográficas secundarias */
+.font-head { font-family: var(--font-titulares); }
+.font-sub { font-family: var(--font-subtitulos); }
+.font-body { font-family: var(--font-parrafos); }
+
+/* Colores auxiliares */
+.bg-jade { background-color: var(--verde-jade); }
+
+
+/* ==========================================
+   2. ESTILOS DE LA SECCIÓN HERO 
+   ========================================== */
+.hero {
+    background: #0A2342;
+
+    margin: 1.5rem auto;
+    max-width: 95%;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+}
+
+/* Círculos Neón para las Disciplinas */
+.circulo-neon {
+    width: 65px;
+    height: 65px;
+    border: 2px solid var(--rosa-mexicano);
+    box-shadow: 0 0 15px rgba(228, 0, 124, 0.7);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.6rem;
+    color: var(--blanco-puro);
+    margin: 0 auto 0.5rem auto;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.circulo-neon:hover {
+    transform: scale(1.12);
+    box-shadow: 0 0 25px rgba(228, 0, 124, 1);
+}
+
+.deportes {
+    display: block;
+    font-size: 0.85rem;
+    color: var(--blanco-puro);
+    font-weight: 600;
+}
+
+/* Botón Principal (Rosa Mexicano) */
+.btn-rosa {
+    background-color: var(--rosa-mexicano);
+    color: var(--blanco-puro);
+    border: none;
+    transition: all 0.3s ease;
+}
+
+.btn-rosa:hover {
+    background-color: #c4006a;
+    color: var(--blanco-puro);
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(228, 0, 124, 0.4);
+}
+
+/* Botón Secundario (Dorado Metálico) */
+.btn-dorado {
+    border: 2px solid var(--dorado-metalico);
+    color: var(--dorado-metalico);
+    background-color: transparent;
+    transition: all 0.3s ease;
+}
+
+.btn-dorado:hover {
+    background-color: var(--dorado-metalico);
+    color: var(--azul-profundo);
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(212, 175, 55, 0.3);
+}
