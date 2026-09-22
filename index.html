@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="es" data-bs-theme="dark">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -189,6 +189,152 @@
                     </button>
                 </div>
             </div>
+
+            <section class="container my-5">
+             <!-- FILA PARA RUNNING Y FÚTBOL -->
+            <div class="row g-4 my-4">
+
+            <!-- 1: CARRUSEL RUNNING (Lado Izquierdo) -->
+                <div id="running" class="col-12 col-md-6">
+                    <h3 class="fw-bold mb-3 text-uppercase text-center text-warning">Supera tus límites</h3>
+                    <div id="carouselRunning" class="carousel slide shadow-sm rounded overflow-hidden" data-bs-ride="carousel">
+                        <!-- Indicadores -->
+                        <div class="carousel-indicators">
+                            <button type="button" data-bs-target="#carouselRunning" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                            <button type="button" data-bs-target="#carouselRunning" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                            <button type="button" data-bs-target="#carouselRunning" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                            <button type="button" data-bs-target="#carouselRunning" data-bs-slide-to="3" aria-label="Slide 4"></button>
+                        </div>
+
+                        <!-- Contenedor de diapositivas -->
+                        <div class="carousel-inner">
+                            <!-- 1 - Presentación Running -->
+                             <div class="carousel-item active" style="height: 450px;">
+                                <img src="./imagenes_futbol_running/01-running.png" class="d-block w-100 h-100" style="filter: brightness(40%); object-fit: cover; object-position: center center;" alt="Running">
+                                <div class="carousel-caption d-flex flex-column justify-content-center h-100 pb-5">
+                                    <h2 class="fw-bold display-6 text-uppercase text-warning"><b>RUNNING</b></h2>
+                                    <p class="fs-6 max-w-md mx-auto text-white">Conquista cada kilómetro. Encuentra el calzado perfecto, indumentaria ligera y la guía profesional para alcanzar tu mejor marca.</p>
+                                </div>
+                            </div>
+                            <!-- 2 - Producto Running A - Tenis -->
+                            <div class="carousel-item" style="height: 450px;">
+                                <img src="./imagenes_futbol_running/02-zapatos-para-correr.png" class="d-block w-100 h-100" style="filter: brightness(40%); object-fit: cover; object-position: center center;" alt="Tenis de Running">
+                                <div class="carousel-caption d-flex flex-column justify-content-center h-100 pb-5">
+                                    <h4 class="fw-bold text-uppercase text-white"><b>Tenis de Running Pro</b></h4>
+                                    <p class="small max-w-md mx-auto text-white">Calzado técnico de amortiguación avanzada para asfalto y pista. Diseño ergonómico y suela de alta tracción.</p>
+                                    <p class="fw-bold mb-1 text-white">Precio aproximado: $1,899 MXN</p>
+                                    <p class="small text-white">(Consulta catálogo oficial para disponibilidad y promociones)</p>
+                                    <!--<a href="#running-section" class="btn btn-warning btn-sm px-4 rounded-pill mt-2 fw-bold">Ver Detalles</a>-->
+                                </div>
+                            </div>
+
+                             <!-- 3 - Producto Running B - Ropa Técnica -->
+                            <div class="carousel-item" style="height: 450px;">
+                                <img src="./imagenes_futbol_running/03-ropa-accesorios-para-correr.png" class="d-block w-100 h-100" style="filter: brightness(40%); object-fit: cover; object-position: center center;" alt="Ropa Técnica">
+                                <div class="carousel-caption d-flex flex-column justify-content-center h-100 pb-5">
+                                    <h4 class="fw-bold text-uppercase text-white"><b>Indumentaria de Alto Rendimiento</b></h4>
+                                    <p class="small max-w-md mx-auto text-white">Tops, shorts y calcetines antirozaduras con tecnología de secado rápido para mayor frescura.</p>
+                                    <p class="fw-bold mb-1 text-white">Precio aproximado: $649 MXN</p>
+                                    <p class="small text-white">(Consulta catálogo oficial para disponibilidad y promociones)</p>
+                                    <!--<a href="#running-section" class="btn btn-warning btn-sm px-4 rounded-pill mt-2 fw-bold">Ver Detalles</a>-->
+                                </div>
+                            </div>
+
+                            <!-- 4 - Servicio Running -->
+                            <div class="carousel-item" style="height: 450px;">
+                                <img src="./imagenes_futbol_running/04-maratones-competencias.png" class="d-block w-100 h-100" style="filter: brightness(40%); object-fit: cover; object-position: center center;" alt="Asesoría Running">
+                                <div class="carousel-caption d-flex flex-column justify-content-center h-100 pb-5">
+                                    <h4 class="fw-bold text-uppercase text-white"><b>Entrenamiento y Registro a Maratones</b></h4>
+                                    <p class="small max-w-md mx-auto text-white">Planes de entrenamiento personalizado según tus metas y gestión de inscripciones a competencias locales.</p>
+                                    <p class="fw-bold mb-1 text-white">Precio aproximado: $400 MXN por plan</p>
+                                    <!--<a href="#running-section" class="btn btn-warning btn-sm px-4 rounded-pill mt-2 fw-bold">Contratar</a>-->
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <!-- Controles Running -->           
+                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselRunning" data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Anterior</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#carouselRunning" data-bs-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Siguiente</span>
+                        </button>
+                    </div>
+                </div>
+
+
+                <!-- 2: CARRUSEL FÚTBOL (Lado Derecho) -->
+                <div id="futbol" class="col-12 col-md-6">
+                    <h3 class="fw-bold mb-3 text-uppercase text-center text-success">Pasión por la cancha</h3>
+                    <div id="carouselFutbol" class="carousel slide shadow-sm rounded overflow-hidden" data-bs-ride="carousel">
+                        <!-- Indicadores -->
+                        <div class="carousel-indicators">
+                            <button type="button" data-bs-target="#carouselFutbol" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                            <button type="button" data-bs-target="#carouselFutbol" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                            <button type="button" data-bs-target="#carouselFutbol" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                            <button type="button" data-bs-target="#carouselFutbol" data-bs-slide-to="3" aria-label="Slide 4"></button>
+                        </div>
+                        <!-- Contenedor de diapositivas -->
+                        <div class="carousel-inner">
+                             <!-- 1 - Presentación Fútbol (PORTADA) -->
+                             <div class="carousel-item active" style="height: 450px;">
+                                <img src="./imagenes_futbol_running/05-futbol.png" class="d-block w-100 h-100" style="filter: brightness(40%); object-fit: cover; object-position: center center;" alt="Fútbol">
+                                <div class="carousel-caption d-flex flex-column justify-content-center h-100 pb-5">
+                                    <h2 class="fw-bold display-6 text-uppercase text-success"><b>FÚTBOL</b></h2>
+                                    <p class="fs-6 max-w-md mx-auto text-white">Siente la pasión del juego. Consigue jerseys oficiales, equipamiento de alto nivel e inscríbete a los mejores torneos.</p>
+                                </div>
+                            </div>
+                            <!-- 2 - Producto Fútbol A - Jerseys -->
+                            <div class="carousel-item" style="height: 450px;">
+                                <img src="./imagenes_futbol_running/06-jerseys-camisetas.png" class="d-block w-100 h-100" style="filter: brightness(40%); object-fit: cover; object-position: center center;" alt="Jerseys Oficiales">
+                                <div class="carousel-caption d-flex flex-column justify-content-center h-100 pb-5">
+                                    <h4 class="fw-bold text-uppercase text-white"><b>Jerseys Oficiales de Clubes</b></h4>
+                                    <p class="small max-w-md mx-auto text-white">Uniformes y camisetas oficiales de clubes y selecciones. Tela de alta tecnología para máxima ventilación.</p>
+                                    <p class="fw-bold mb-1 text-white">Precio aproximado: $1,299 MXN</p>
+                                    <p class="small text-white">(Consulta catálogo oficial para disponibilidad y promociones)</p>
+                                    <!--<a href="#futbol-section" class="btn btn-success btn-sm px-4 rounded-pill mt-2">Ver Detalles</a>-->
+                                </div>
+                            </div>
+                            <!-- 3 - Producto Fútbol B - Balones y Equipamiento -->
+                            <div class="carousel-item" style="height: 450px;">
+                                <img src="./imagenes_futbol_running/07-balones-equipos-proteccion.png" class="d-block w-100 h-100" style="filter: brightness(40%); object-fit: cover; object-position: center center;" alt="Balones y Equipamiento">
+                                <div class="carousel-caption d-flex flex-column justify-content-center h-100 pb-5">
+                                    <h4 class="fw-bold text-uppercase text-white"><b>Balones y Protección Pro</b></h4>
+                                    <p class="small max-w-md mx-auto text-white">Balones profesionales sellados térmicamente, espinilleras ergonómicas y guantes para guardameta.</p>
+                                    <p class="fw-bold mb-1 text-white">Precio aproximado: $799 MXN</p>
+                                    <p class="small text-white">(Consulta catálogo oficial para disponibilidad y promociones)</p>
+                                    <!--<a href="#futbol-section" class="btn btn-success btn-sm px-4 rounded-pill mt-2">Ver Detalles</a>-->
+                                </div>
+                            </div>
+                            <!-- 4 - Servicio Fútbol -->
+                             <div class="carousel-item" style="height: 450px;">
+                                <img src="./imagenes_futbol_running/08-ligas-torneos-futbol.png" class="d-block w-100 h-100" style="filter: brightness(40%); object-fit: cover; object-position: center center;" alt="Inscripciones a Ligas">
+                                <div class="carousel-caption d-flex flex-column justify-content-center h-100 pb-5">
+                                    <h4 class="fw-bold text-uppercase text-white"><b>Inscripción a Ligas y Torneos</b></h4>
+                                    <p class="small max-w-md mx-auto text-white">Registra a tu equipo en nuestras ligas locales. Incluye arbitraje profesional y gestión de marcadores.</p>
+                                    <p class="fw-bold mb-1 text-white">Precio aproximado: $2,500 MXN por equipo</p>
+                                    <!--<a href="#futbol-section" class="btn btn-success btn-sm px-4 rounded-pill mt-2">Inscribir Equipo</a>-->
+                                </div>
+                            </div>
+                        
+                        </div>
+
+                        <!-- Controles Fútbol -->
+                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselFutbol" data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Anterior</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#carouselFutbol" data-bs-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Siguiente</span>
+                        </button>
+                    </div>
+                </div>
+            
+            </div>
+        </section>
 
 
 
