@@ -1,4 +1,16 @@
 .img-carrusel {
-  max-height: 500px; /* Cambia este valor a la altura máxima deseada */
-  object-fit: cover; /* Mantiene la proporción de la imagen recortando los bordes si es necesario */
+  max-height: 450px; 
+  object-fit: cover; 
+}
+
+.caja-texto-rosa {
+    background-color: rgba(255, 45, 158, 0.35) !important; /* fondo rosa con 35% de opacidad */
+    color: #ffffff !important; /* Texto blanco */
+    box-shadow: 0 0 15px rgba(255, 45, 158, 0.5); /* Sombra con brillo rosa */
+}
+
+.caja-texto-rosa h3,
+.caja-texto-rosa p {
+    color: #ffffff !important;
+    margin-bottom: 0.5rem;
 }
