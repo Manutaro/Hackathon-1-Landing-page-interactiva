@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-bs-theme="dark">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -22,14 +22,128 @@
 
         <!--PRODUCTOS POR DEPORTE-->
         <section class="container">
+        
+            <!-- corredores -->
+             <!-- título de sección-->
+            <div class="row">
+                <div class="col">
+                    <h2>Todo lo que necesitas para tu ruta</h2>
+                </div>
+            </div>
+            
+            <!--Fila horizontal de productos-->
+            <div class="row">
+                <div id="carruselRunning" class="carousel slide" data-bs-slide="carousel" data-bs-wrap="false">
+                    <!--indicadores-->
+                    <div class="carousel-indicators">
+                        <button type="button" data-bs-target="#carruselRunning" data-bs-slide-to="0" class="active" aria-current="true" aria-label="jerseys y camisetas"></button>
+                        <button type="button" data-bs-target="#carruselRunning" data-bs-slide-to="1" aria-label="Balones y equipamiento"></button>
+                        <button type="button" data-bs-target="#carruselRunning" data-bs-slide-to="2" aria-label="Incríbete a las ligas asociadas"></button>
+                    </div>
+                    <!--Slides del carrusel-->
+                    <div class="carousel-inner">
+                        <!-- slide #1 tenis para correr-->
+                         <div class="carousel-item active">
+                            <img src="./imagenes_futbol_running/zapatos-para-correr.png" class="d-block w-100 img-carrusel" alt="Tenis de running">
+                            <div class="carousel-caption d-none d-md-block">
+                                <h3>Tenis de running</h3>
+                                <p>Supera tus marcas con nuestro calzado especializado, desde opciones de alta amortiguación diaria hasta modelos de placa de carbono de alta gama.</p>
+                            </div>
+                        </div>
+                        <!--slide #2 Ropa técnica de alto rendimiento-->
+                        <div class="carousel-item">
+                            <img src="./imagenes_futbol_running/ropa-accesorios-para-correr.png" class="d-block w-100 img-carrusel" alt="ropa técnica de alto rendimiento">
+                            <div class="carousel-caption d-none d-md-block">
+                                <h3>Ropa técnica de alto rendimiento</h3>
+                                <p>Mantén la frescura en cada kilómetro con nuestros tops transpirables, shorts, leggings y calcetines diseñados para evitar rozaduras.</p>
+                            </div>
+                        </div>
+                        
+                        <!--Slide #3 Inscripciones a carreras y maratones-->
+                        <div class="carousel-item">
+                            <img src="./imagenes_futbol_running/maratones-competencias.png" class="d-block w-100 img-carrusel" alt="inscripciones a carreras y maratones">
+                            <div class="carousel-caption d-none d-md-block">
+                                <h3>Inscripciones a carreras y maratones</h3>
+                                <p>Asegura tu lugar en los mejores eventos locales y maratones oficiales para poner a prueba tu entrenamiento.</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carruselRunning" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Anterior</span>
+                    </button>
+                    
+                    <button class="carousel-control-next" type="button" data-bs-target="#carruselRunning" data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Siguiente</span>
+                    </button>
+                </div>
+
+            <br>
+
+
             <!-- futbol -->
-             <div class="row">Futbol</div>
+             <!-- título de sección-->
              <div class="row">
-                <div class="col product card"></div>
-                <div class="col product card"></div>
-                <div class="col product card"></div>
-                <div class="col product card"></div>
+                <div class="col">
+                    <h2>Todo para tu partido de fútbol</h2>
+                </div>
              </div>
+             <!--Fila horizontal de productos-->
+             <div class="row">
+                <div id="carruselFutbol" class="carousel slide" data-bs-slide="carousel" data-bs-wrap="false">
+                    <!--indicadores-->
+                    <div class="carousel-indicators">
+                        <button type="button" data-bs-target="#carruselFutbol" data-bs-slide-to="0" class="active" aria-current="true" aria-label="jerseys y camisetas"></button>
+                        <button type="button" data-bs-target="#carruselFutbol" data-bs-slide-to="1" aria-label="Balones y equipamiento"></button>
+                        <button type="button" data-bs-target="#carruselFutbol" data-bs-slide-to="2" aria-label="Incríbete a las ligas asociadas"></button>
+                    </div>
+                     <!--Slides del carrusel-->
+                     <div class="carousel-inner">
+                        
+                        <!-- slide #1 jerseys-->
+                         <div class="carousel-item active">
+                            <img src="./imagenes_futbol_running/jerseys-camisetas.png" class="d-block w-100 img-carrusel" alt="jerseys de León">
+                            <div class="carousel-caption d-none d-md-block">
+                                <h3>Jerseys y camisetas oficiales</h3>
+                                <p>Vístete como los profesionales. Escoge tu camiseta favorita de selecciones nacionales y los mejores clubes.</p>
+                            </div>
+                        </div>
+
+                        <!--slide #2 balones y equipamiento básico-->
+                        <div class="carousel-item">
+                            <img src="./imagenes_futbol_running/balones-equipos-proteccion.png" class="d-block w-100 img-carrusel" alt="balones y equipo de protección">
+                            <div class="carousel-caption d-none d-md-block">
+                                <h3>Balones y equipamiento básico</h3>
+                                <p>Encuentra balones oficiales, guantes de portero y espinilleras para máxima protección mientras juegas.</p>
+                            </div>
+                        </div>
+                        
+                        <!--Slide #3 servicios e inscripciones-->
+                        <div class="carousel-item">
+                            <img src="./imagenes_futbol_running/ligas-torneos-futbol.png" class="d-block w-100 img-carrusel" alt="servicios de inscripcion a ligas y torneos">
+                            <div class="carousel-caption d-none d-md-block">
+                                <h3>Inscripciones a ligas y torneos</h3>
+                                <p>Registra a tu equipo en nuestras ligas amateur y compite por el campeonato local.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carruselFutbol" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Anterior</span>
+                    </button>
+                    
+                    <button class="carousel-control-next" type="button" data-bs-target="#carruselFutbol" data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Siguiente</span>
+                    </button>
+                </div>
+
+
+             </div>
+
+
         </section>
 
         <!--NEWSLETTER-->

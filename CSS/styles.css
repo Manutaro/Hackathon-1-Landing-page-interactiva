@@ -1,0 +1,4 @@
+.img-carrusel {
+  max-height: 500px; /* Cambia este valor a la altura máxima deseada */
+  object-fit: cover; /* Mantiene la proporción de la imagen recortando los bordes si es necesario */
+}
