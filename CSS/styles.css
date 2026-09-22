@@ -1,0 +1,46 @@
+/*ESTILOS GLOBALES */
+body {
+  background-color: black;
+  color: white;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/*HEADER */
+.header-custom {
+  background-color: black;
+  border-bottom: 1px solid deeppink;
+}
+
+/* Imagen del Logo */
+.logo-img {
+  height: 300px; 
+  width: auto; 
+  display: block;
+}
+
+/* Enlaces de Navegación */
+.nav-link-custom {
+  color: gray;
+  text-decoration: none;
+  font-size: 0.95rem;
+  transition: color 0.3s ease;
+}
+
+.nav-link-custom:hover,
+.nav-link-custom.active {
+  color: deeppink;
+}
+
+/* Botón de Acción (Registro) */
+.btn-pink {
+  background-color: deeppink;
+  color: white;
+  font-weight: 600;
+  border: none;
+  transition: all 0.3s ease;
+}
+
+.btn-pink:hover {
+  background-color: hotpink;
+  color: white;
+}
