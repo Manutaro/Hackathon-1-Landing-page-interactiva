@@ -1,0 +1,99 @@
+/* --- Variables de Color  --- */
+:root {
+    --bg-dark: #0d0d0d; /* Fondo muy oscuro */
+    --bg-card: #d01eb5; /* Fondo de tarjetas */
+    --neon-pink: #e91e63; /* El rosa fuerte/neón */
+    --neon-purple: #9c27b0; /* El morado del borde */
+    --text-light: #e0e0e0;
+    --text-muted: #a0a0a0;
+}
+
+/* --- Estilos de la Sección Newsletter --- */
+.newsletter-section {
+    background-color: var(--bg-dark);
+    border-top: 1px solid var(--neon-purple);
+}
+
+.newsletter-card {
+    background-color: #1e1e1e; /* Un tono ligeramente más claro */
+    border: 1px solid var(--neon-purple);
+    box-shadow: 0 0 10px rgba(156, 39, 176, 0.3); /* Resplandor morado */
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+.custom-input {
+    background-color: #2c2c2c;
+    border: 1px solid #444;
+    color: white;
+    padding: 10px 15px;
+}
+
+.custom-input:focus {
+    background-color: #2c2c2c;
+    border-color: var(--neon-pink);
+    color: white;
+    box-shadow: 0 0 5px rgba(233, 30, 99, 0.5);
+}
+
+.btn-custom-pink {
+    background-color: var(--neon-pink);
+    color: white;
+    border: none;
+    font-weight: bold;
+    padding: 10px;
+    transition: all 0.3s ease;
+}
+
+.btn-custom-pink:hover {
+    background-color: #c2185b; /* Un rosa un poco más oscuro */
+    color: white;
+    box-shadow: 0 0 10px rgba(233, 30, 99, 0.6);
+}
+
+/* --- Estilos del Footer --- */
+.footer-section {
+    background-color: #222222; /* Fondo gris oscuro para el footer */
+    border-top: 1px solid #333;
+}
+
+.footer-title {
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: #fff;
+}
+
+.footer-links li {
+    color: var(--text-muted);
+    font-size: 0.9rem;
+}
+
+.footer-link {
+    color: var(--text-muted);
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.footer-link:hover {
+    color: var(--neon-pink);
+}
+
+/* Iconos Sociales */
+.social-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    background-color: #333;
+    color: white;
+    border-radius: 50%;
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+.social-icon:hover {
+    background-color: var(--neon-pink);
+    color: white;
+    transform: translateY(-3px);
+}
