@@ -1,0 +1,14 @@
+/* ==========================================
+   2. ESTILOS DE LA SECCIÓN Carrusel 
+   ========================================== */
+
+   /* Flechas del carrusel en blanco */
+.carousel .carousel-control-prev-icon,
+.carousel .carousel-control-next-icon {
+  filter: invert(100%) !important;
+}
+
+/* Indicador activo (el que está seleccionado) */
+.carousel-indicators .active {
+  background-color: rgb(255, 255, 255);  
+}
