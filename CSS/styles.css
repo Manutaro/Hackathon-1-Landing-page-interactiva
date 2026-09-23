@@ -34,6 +34,32 @@ body {
 /* Colores auxiliares */
 .bg-jade { background-color: var(--verde-jade); }
 
+/* ESTILOS DEL HEADER Y MENÚ DE NAVEGACIÓN  */
+.header-custom {
+    background-color: var(--azul-profundo) !important;
+}
+.header-custom .nav-link-custom {
+    font-size: 1.6rem;                  
+    color: var(--blanco-puro) !important; 
+    font-weight: 600;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+/* Efecto al pasar el cursor sobre las opciones del menú */
+.header-custom .nav-link-custom:hover,
+.header-custom .nav-link-custom.active {
+    color: var(--rosa-mexicano) !important; /* Cambia a rosa al seleccionarlo o pasar el mouse */
+}
+
+/* botón de Registro */
+.header-custom .btn {
+    font-size: 1.6rem !important; /* Puedes cambiar este valor (ej. 1.3rem) si lo quieres más grande */
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    color: var(--rosa-mexicano)
+}
+
 
 /* ==========================================
    2. ESTILOS DE LA SECCIÓN HERO 
@@ -106,7 +132,7 @@ body {
 
 /*tamaño del logo*/
 .logo-img {
-    max-height: 100px; 
+    max-height: 200px; 
     width: auto;
     object-fit: contain;
 }
@@ -125,3 +151,5 @@ body {
 .carousel-indicators .active {
   background-color: rgb(255, 255, 255);  
 }
+
+
