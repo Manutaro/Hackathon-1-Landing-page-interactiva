@@ -1,99 +1,154 @@
-/* --- Variables de Color  --- */
+/* --- Paleta Oficial --- */
 :root {
-    --bg-dark: #0d0d0d; /* Fondo muy oscuro */
-    --bg-card: #d01eb5; /* Fondo de tarjetas */
-    --neon-pink: #e91e63; /* El rosa fuerte/neón */
-    --neon-purple: #9c27b0; /* El morado del borde */
-    --text-light: #e0e0e0;
-    --text-muted: #a0a0a0;
+    --rosa-mexicano: #E4007C;    /* Protagonista y acentos neón */
+    --azul-profundo: #0A2342;    /* Fondo principal y tarjetas */
+    --dorado-metalico: #D4AF37;  /* Detalle premium */
+    --verde-jade: #007A5E;       /* Etiquetas y distintivos */
+    --blanco-puro: #FFFFFF;      /* Textos principales */
+    --gris-grafito: #2C2C2C;     /* Soporte neutro */
 }
 
-/* --- Estilos de la Sección Newsletter --- */
+/* =========================================
+   SECCIÓN NEWSLETTER
+   ========================================= */
 .newsletter-section {
-    background-color: var(--bg-dark);
-    border-top: 1px solid var(--neon-purple);
+    background-color: var(--azul-profundo);
+    padding-top: 3rem;
+    padding-bottom: 3rem;
 }
 
 .newsletter-card {
-    background-color: #1e1e1e; /* Un tono ligeramente más claro */
-    border: 1px solid var(--neon-purple);
-    box-shadow: 0 0 10px rgba(156, 39, 176, 0.3); /* Resplandor morado */
+    background-color: #0d2a4d; /* Variante más clara del azul profundo para la tarjeta */
+    border: 1px solid var(--dorado-metalico); /* Borde dorado premium */
+    box-shadow: 0 0 15px rgba(212, 175, 55, 0.25); /* Resplandor dorado sutil */
     max-width: 500px;
     margin: 0 auto;
+    padding: 2rem;
+    border-radius: 12px;
 }
 
+/* Título de la tarjeta */
+.newsletter-card h3 {
+    color: var(--blanco-puro);
+    font-weight: 700;
+    letter-spacing: 0.5px;
+}
+
+/* Texto descriptivo */
+.newsletter-text {
+    color: #ffffff !important; /* Azul grisáceo claro, se ve bien sobre azul profundo */
+    font-size: 0.95rem;
+}
+
+/* =========================================
+   INPUT DE EMAIL
+   ========================================= */
 .custom-input {
-    background-color: #2c2c2c;
+    background-color: var(--gris-grafito);
     border: 1px solid #444;
-    color: white;
-    padding: 10px 15px;
+    color: var(--blanco-puro);
+    padding: 12px 16px;
+    border-radius: 6px;
+    transition: all 0.3s ease;
+}
+
+.custom-input::placeholder {
+    color: #8a8a8a;
 }
 
 .custom-input:focus {
-    background-color: #2c2c2c;
-    border-color: var(--neon-pink);
-    color: white;
-    box-shadow: 0 0 5px rgba(233, 30, 99, 0.5);
+    background-color: var(--gris-grafito);
+    border-color: var(--rosa-mexicano);
+    color: var(--blanco-puro);
+    box-shadow: 0 0 8px rgba(228, 0, 124, 0.5); /* Resplandor rosa mexicano */
+    outline: none;
 }
 
+/* =========================================
+   BOTÓN SUBSCRIBE
+   ========================================= */
 .btn-custom-pink {
-    background-color: var(--neon-pink);
-    color: white;
-    border: none;
-    font-weight: bold;
-    padding: 10px;
+    background-color: var(--rosa-mexicano) !important;
+    color: var(--blanco-puro) !important;
+    border: none !important;
+    font-weight: 700;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    padding: 12px;
+    border-radius: 6px;
     transition: all 0.3s ease;
 }
 
 .btn-custom-pink:hover {
-    background-color: #c2185b; /* Un rosa un poco más oscuro */
-    color: white;
-    box-shadow: 0 0 10px rgba(233, 30, 99, 0.6);
+    background-color: #c20069 !important; /* Rosa mexicano más oscuro */
+    color: var(--blanco-puro) !important;
+    box-shadow: 0 0 15px rgba(228, 0, 124, 0.7); /* Brillo neón rosa */
+    transform: translateY(-2px); /* Pequeño efecto de elevación */
 }
 
-/* --- Estilos del Footer --- */
+.btn-custom-pink:focus,
+.btn-custom-pink:active {
+    color: var(--blanco-puro) !important;
+    box-shadow: 0 0 0 0.25rem rgba(228, 0, 124, 0.5) !important;
+    background-color: var(--rosa-mexicano) !important;
+}
+
+/* =========================================
+   FOOTER
+   ========================================= */
 .footer-section {
-    background-color: #222222; /* Fondo gris oscuro para el footer */
-    border-top: 1px solid #333;
+    background-color: #061a33; /* Azul profundo un poco más oscuro para diferenciar */
+    border-top: 2px solid var(--dorado-metalico); /* Línea dorada superior */
+    padding-top: 3rem;
+    padding-bottom: 1.5rem;
 }
 
 .footer-title {
     font-size: 1.1rem;
-    font-weight: 600;
-    color: #fff;
+    font-weight: 700;
+    color: var(--dorado-metalico); /* Títulos dorados = premium */
+    letter-spacing: 0.5px;
+    margin-bottom: 1rem;
 }
 
 .footer-links li {
-    color: var(--text-muted);
+    color: #b8c5d6;
     font-size: 0.9rem;
+    margin-bottom: 0.4rem;
 }
 
 .footer-link {
-    color: var(--text-muted);
+    color: #b8c5d6;
     text-decoration: none;
-    transition: color 0.3s;
+    transition: color 0.3s ease;
 }
 
 .footer-link:hover {
-    color: var(--neon-pink);
+    color: var(--rosa-mexicano); /* Hover rosa mexicano */
 }
 
-/* Iconos Sociales */
+/* =========================================
+   ICONOS SOCIALES
+   ========================================= */
 .social-icon {
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 40px;
-    height: 40px;
-    background-color: #333;
-    color: white;
+    width: 42px;
+    height: 42px;
+    background-color: var(--gris-grafito);
+    color: var(--blanco-puro);
     border-radius: 50%;
     text-decoration: none;
+    font-size: 1.1rem;
     transition: all 0.3s ease;
+    border: 1px solid transparent;
 }
 
 .social-icon:hover {
-    background-color: var(--neon-pink);
-    color: white;
-    transform: translateY(-3px);
+    background-color: var(--rosa-mexicano);
+    color: var(--blanco-puro);
+    transform: translateY(-4px);
+    box-shadow: 0 5px 15px rgba(228, 0, 124, 0.5);
 }
+
