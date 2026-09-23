@@ -111,7 +111,11 @@ body {
     object-fit: contain;
 }
 
-/* Flechas del carrusel en blanco */
+/* ==========================================
+   2. ESTILOS DE LA SECCIÓN Carrusel 
+   ========================================== */
+
+   /* Flechas del carrusel en blanco */
 .carousel .carousel-control-prev-icon,
 .carousel .carousel-control-next-icon {
   filter: invert(100%) !important;
@@ -119,5 +123,5 @@ body {
 
 /* Indicador activo (el que está seleccionado) */
 .carousel-indicators .active {
-  background-color: rgb(255, 255, 255);   /* aquí puedes poner otro color, ej. rojo */
+  background-color: rgb(255, 255, 255);  
 }
