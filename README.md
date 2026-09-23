@@ -35,13 +35,13 @@ El concepto conecta la raíz del vocablo náhuatl Tlalli (Tierra) con el espíri
 
 ## Cobertura de Deportes y Servicios
 
-La plataforma abarca los 5 deportes más practicados en CDMX, Edomex y Monterrey, integrando marcas nacionales e internacionales:
+La plataforma abarca los 4 deportes más practicados en CDMX, Edomex y Monterrey, integrando marcas nacionales e internacionales:
 
 1. **Fútbol:** Jerseys oficiales, balones (Voit, Garcis), espinilleras e inscripción a ligas amateur localizadas.
 2. **Running:** Tenis de alto rendimiento (Charly PFX), indumentaria técnica e inscripciones a maratones locales.
 3. **Natación:** Trajes de baño y equipo especializado (Escualo Sports), membresías y clases en albercas.
 4. **Gym / Entrenamiento Funcional:** Sets deportivos (Asani Active, Vyve, Maja), suplementos y asesoría personalizada.
-5. **Pádel:** Palas de gama alta (Bullpadel, Adidas, Nox) y sistema de reserva de horarios en canchas.
+
 
 ---
 
@@ -62,11 +62,10 @@ La plataforma abarca los 5 deportes más practicados en CDMX, Edomex y Monterrey
   
 ## Tecnologías Utilizadas
 
-* **HTML5:** Semántica limpia y estructurada para garantizar accesibilidad web y SEO.
+* **HTML5:** Semántica limpia y estructurada para garantizar accesibilidad web.
 * **CSS3:** Hojas de estilo personalizadas para la definición de paleta de colores, animaciones y diseño visual.
 * **Bootstrap 5:** Framework de CSS utilizado para el maquetado adaptable (responsive) y componentes de interfaz.
 * **Bootstrap Icons:** Biblioteca de iconos vectoriales para acciones de navegación e identificación de categorías.
-* **JavaScript (Vanilla ES6):** Manejo dinámico del DOM, filtrado de categorías, interacción con el carrusel de imágenes y gestión del carrito.
 * **Visual Studio Code:** Entorno de desarrollo integrado (IDE) utilizado para la construcción del proyecto.
 
 ---
@@ -74,7 +73,7 @@ La plataforma abarca los 5 deportes más practicados en CDMX, Edomex y Monterrey
 ## Características de la Plataforma
 
 * **Diseño 100% Adaptable:** Interfaz optimizada mediante Bootstrap para una navegación fluida en dispositivos móviles, tabletas y computadoras de escritorio.
-* **Filtro Reactivo de Categorías:** Exploración dinámica e instantánea por disciplinas deportivas (Fútbol, Running, Natación, Gym y Pádel).
+* **Filtro Reactivo de Categorías:** Exploración dinámica e instantánea por disciplinas deportivas (Fútbol, Running, Natación y Gym).
 * **Carrito de Compras Interactivo:** Interfaz responsiva con notificaciones en tiempo real para la adición y cálculo de productos o servicios seleccionados.
 * **Integración de Marcas Mexicanas:** Visibilidad prioritaria e impulso a marcas nacionales como Charly, Pirma, Voit, Escualo y Asani.
 * **Navegación Intuitiva:** Componente de cabecera con acceso rápido a las secciones principales del sitio.
