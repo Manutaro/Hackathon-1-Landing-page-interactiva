@@ -4,383 +4,444 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tierra deportiva | Tu pasión, nuestro terreno</title>
-   
-    <!-- LINK -->
-    <link href="https://jsdelivr.net" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
+    <title>Tierra Deportiva | Tu pasión, nuestro terreno</title>
+
+    <!-- enlace de bootstrap 5.3.8 -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+
+    <!-- enlace a nuestro CSS personalizado -->
     <link rel="stylesheet" href="./CSS/styles.css">
 </head>
 
 <body>
-        <!--Header-->
+
+    <!-- HEADER-->
     <header class="header-custom py-3">
-     <div class="container d-flex align-items-center justify-content-between">
-    <!-- Logo -->
-    <a href="#" class="logo-text text-decoration-none">
-        <img src="logo/logo-tierra-deportiva.jpeg" alt="Tierra Deportiva" class="logo-img">
-    </a>
-    <!-- Menú de Navegación -->
-    <nav class="nav-links d-none d-md-flex gap-4">
-      <a href="#" class="nav-link-custom active">Home</a>
-      <a href="#" class="nav-link-custom">Servicios</a>
-      <a href="#" class="nav-link-custom">Comunidad</a>
-      <a href="#" class="nav-link-custom">Comunidad</a>
-    </nav>
+        <div class="container d-flex align-items-center justify-content-between">
 
-    <!-- Botón Registro -->
-    <div>
-      <a href="#" class="btn btn-pink rounded-pill px-4 py-2">Registro</a>
-    </div>
-  </div>
-</header>
-    
+            <!-- Logo -->
+            <a href="#inicio" class="logo-text text-decoration-none">
+                <img
+                    src="./logo/logo-tierra-deportiva.jpeg"
+                    alt="Tierra Deportiva"
+                    class="logo-img"
+                >
+            </a>
 
-       <!-- PRODUCTOS Y SERVICIOS POR DEPORTE -->
-<section class="container-fluid bg-black py-5 m-0 text-white">
-    <div class="container">
-        
-        <div class="row g-4"> <!-- contenedor .row alinea columnas horizontalmente en pantallas medianas y grandes -->
-            
-            <!-- 1: CARRUSEL GYM (Lado Izquierdo) -->
-            <div id="gimnasio" class="col-12 col-md-6">
-                <h3 class="fw-bold mb-3 text-uppercase text-center" style="color: #E4007C;">Entrena mejor</h3>        
-    
-                <div id="carouselGym" class="carousel slide shadow-sm rounded overflow-hidden" data-bs-ride="carousel">
-                    
-                    <div class="carousel-indicators">
-                        <button type="button" data-bs-target="#carouselGym" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-                        <button type="button" data-bs-target="#carouselGym" data-bs-slide-to="1" aria-label="Slide 2"></button>
-                        <button type="button" data-bs-target="#carouselGym" data-bs-slide-to="2" aria-label="Slide 3"></button>
-                        <button type="button" data-bs-target="#carouselGym" data-bs-slide-to="3" aria-label="Slide 4"></button>
-                    </div>
-                    
-                    <!-- Contenedor de diapositivas -->
-                    <div class="carousel-inner">
-                        
-                        <!-- 1 - Presentación GYM -->
-                        <div class="carousel-item active" style="height: 450px;">
-                            <img src="./imagenes_gym_natacion/01-gym.avif" class="d-block w-100 h-100" style="filter: brightness(40%); object-fit: cover; object-position: center bottom;" alt="GYM">
-                            <div class="carousel-caption d-flex flex-column justify-content-center h-100 pb-5">
-                                <h2 class="fw-bold display-6 text-uppercase" style="color: #E4007C;"><b>GYM</b></h2>
-                                <p class="fs-6 max-w-md mx-auto">Equípate con lo mejor. Descubre los productos destacados y pregunta por nuestro servicio de asesoría personalizada.</p>
-                            </div>
-                        </div>
+            <!-- Menú de navegación -->
+            <nav class="nav-links d-none d-md-flex gap-4">
+                <a href="#inicio" class="nav-link-custom active">Home</a>
+                <a href="#servicios" class="nav-link-custom">Servicios</a>
+                <a href="#comunidad" class="nav-link-custom">Comunidad</a>
+                <a href="#contacto" class="nav-link-custom">Contacto</a>
+            </nav>
 
-                        <!-- 2 - Producto GYM a-Tenis-->
-                        <div class="carousel-item" style="height: 450px;">
-                            <img src="./imagenes_gym_natacion/02-tenis.jpg" loading="lazy" class="d-block w-100 h-100" style="filter: brightness(40%); object-fit: cover; object-position: center bottom;" alt="Tenis Charly">
-                            <div class="carousel-caption d-flex flex-column justify-content-center h-100 pb-5">
-                                <h4 class="fw-bold text-uppercase"><b>Tenis Charly PFX Training</b></h4>
-                                <p class="small max-w-md mx-auto">Calzado diseñado para <b>entrenamiento funcional y gym.</b> Amortiguación avanzada y suela antideslizante.</p>
-                                <p class="fw-bold mb-1">Precio aproximado: $1,199 MXN</p><br>
-                                <p>(Consulta catálogo oficial para disponibilidad y promociones)</p>
-                            </div>
-                        </div>
+            <!-- Botón Registro -->
+            <div>
+                <a href="#" class="btn btn-pink rounded-pill px-4 py-2">
+                    Registro
+                </a>
+            </div>
 
-                        <!-- 2 - Producto GYM b-Playera -->
-                        <div class="carousel-item" style="height: 450px;">
-                            <img src="./imagenes_gym_natacion/03-playera.jpg" loading="lazy" class="d-block w-100 h-100" style="filter: brightness(40%); object-fit: cover; object-position: center center;" alt="Playera">
-                            <div class="carousel-caption d-flex flex-column justify-content-center h-100 pb-5">
-                                <h4 class="fw-bold text-uppercase"><b>Playera Pirma DryFit Gym</b></h4>
-                                <p class="small max-w-md mx-auto">Prenda diseñada para entrenamiento funcional y gym. <br>
-                                Tela DryFit transpirable que mantiene frescura durante rutinas intensas.</p>
-                                <p class="fw-bold mb-1">Precio aproximado: $899 MXN</p><br>
-                                <p>(Consulta catálogo oficial para disponibilidad y promociones)</p>
-                            </div>
-                        </div>
+        </div>
+    </header>
 
-                        <!-- 4 - Servicio -->
-                        <div class="carousel-item" style="height: 450px;">
-                            <img src="./imagenes_gym_natacion/04-fuerza.avif" loading="lazy" class="d-block w-100 h-100" style="filter: brightness(40%); object-fit: cover; object-position: center center;" alt="Asesoría Personalizada">
-                            <div class="carousel-caption d-flex flex-column justify-content-center h-100 pb-5">
-                                <h4 class="fw-bold text-uppercase"><b>Asesoría Personalizada</b></h4>
-                                <p class="small max-w-md mx-auto">Sesión guiada por expertos en rutinas de fuerza y resistencia. <br>
-                                    Incluye asesoría personalizada sobre el uso correcto de equipo.<br>
-                                    Evaluación rápida de postura y técnica para evitar lesiones.<br>
-                                    Duración: 1 hora..</p>
-                                <p class="fw-bold mb-1">Precio aproximado: $350 MXN por sesión</p>
-                            </div>
-                        </div>
 
+    <!--HERO-->
     <section id="inicio" class="hero py-5 text-center text-white">
+
         <div class="container py-4">
 
-            <!-- 1. Íconos Circulares Neón por Disciplina -->
-            <div class="d-flex justify-content-center align-items-center flex-wrap gap-4 mb-4">
-
-            <!-- 2: CARRUSEL NATACIÓN (Lado Derecho) -->
-            <div id="natacion" class="col-12 col-md-6">
-                <h3 class="fw-bold mb-3 text-uppercase text-center text-info">Domina tu disciplina</h3>
- 
-                <div id="carouselNatacion" class="carousel slide shadow-sm rounded overflow-hidden" data-bs-ride="carousel">
-
-                    <div class="carousel-indicators">
-                        <button type="button" data-bs-target="#carouselNatacion" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-                        <button type="button" data-bs-target="#carouselNatacion" data-bs-slide-to="1" aria-label="Slide 2"></button>
-                        <button type="button" data-bs-target="#carouselNatacion" data-bs-slide-to="2" aria-label="Slide 3"></button>
-                        <button type="button" data-bs-target="#carouselNatacion" data-bs-slide-to="3" aria-label="Slide 4"></button>
-                    </div>
-                    
-                    <!-- Contenedor de diapositivas -->
-                    <div class="carousel-inner">
-                        
-                        <!-- 1 - Presentación Natación -->
-                        <div class="carousel-item active" style="height: 450px;">
-                            <img src="./imagenes_gym_natacion/05-natacion.avif" class="d-block w-100 h-100" style="filter: brightness(40%); object-fit: cover; object-position: center center;" alt="Natación">
-                            <div class="carousel-caption d-flex flex-column justify-content-center h-100 pb-5">
-                                <h2 class="fw-bold display-5 text-uppercase text-info"><b>Natación</b></h2>
-                                <p class="fs-5 max-w-md mx-auto">Equípate con lo mejor para tus entrenamientos acuáticos. Descubre nuestros productos destacados y recibe asesoría personalizada para elegir el equipo ideal.</p>
-                            </div>
-                        </div>
-                        <span class="deportes font-sub">Fútbol</span>
-                    </a>
-                </div>
-
-                        <!-- 2 - Producto Natación A -Goggles -->
-                        <div class="carousel-item" style="height: 450px;">
-                            <img src="./imagenes_gym_natacion/06-googles.webp" loading="lazy" class="d-block w-100 h-100" style="filter: brightness(40%); object-fit: cover; object-position: center center;" alt="Goggles">
-                            <div class="carousel-caption d-flex flex-column justify-content-center h-100 pb-5">
-                                <h4 class="fw-bold text-uppercase"><b>Escualo Sports - Goggles Competencia UV</b></h4>
-                                <p class="small max-w-md mx-auto">Accesorio diseñado para entrenamientos y competencias acuáticas. Protección contra rayos UV y ajuste ergonómico resistente al cloro.</p>
-                                <p class="fw-bold mb-1">Precio aproximado: $450 MXN</p>
-                                <p>(Consulta catálogo oficial para disponibilidad y promociones)</p>
-                            </div>
-                        </div>
-                        <span class="deportes font-sub">Running</span>
-                    </a>
-                </div>
-
-                        <!-- 2 - Producto Natación B - Traje de baño-->
-                        <div class="carousel-item" style="height: 450px;">
-                            <img src="./imagenes_gym_natacion/07-traje-de-baño.webp" loading="lazy" class="d-block w-100 h-100" style="filter: brightness(40%); object-fit: cover; object-position: center center;" alt="Traje de baño">
-                            <div class="carousel-caption d-flex flex-column justify-content-center h-100 pb-5">
-                                <h4 class="fw-bold text-uppercase"><b>Grupo Maralbo (Seahorse) – Traje de Baño Competencia Pro  </b></h4>
-                                <p class="small max-w-md mx-auto">Traje especializado para natación deportiva y competencias. Fabricado con telas de alta compresión que mejoran la hidrodinámica en el agua.
-                                Resistente al cloro y con costuras reforzadas para mayor durabilidad en entrenamientos intensivos.</p>
-                                <p class="fw-bold mb-1">Precio aproximado: $1,050 MXN  </p>
-                                <p>(Consulta catálogo oficial para disponibilidad y promociones)</p>
-                            </div>
-                        </div>
-                        <span class="deportes font-sub">Natación</span>
-                    </a>
-                </div>
-
-                         <!-- 4 - Servicio -->
-                        <div class="carousel-item" style="height: 450px;">
-                            <img src="./imagenes_gym_natacion/08-renta-alberca.avif" loading="lazy" class="d-block w-100 h-100" style="filter: brightness(40%); object-fit: cover; object-position: center center;" alt="Asesoría Personalizada">
-                            <div class="carousel-caption d-flex flex-column justify-content-center h-100 pb-5">
-                                <h4 class="fw-bold text-uppercase"><b>Asesoría Personalizada</b></h4>
-                                <p class="small max-w-md mx-auto">Sesión guiada por expertos en estilos de nado y resistencia acuática. <br>
-                                Incluye asesoría personalizada sobre la técnica de brazada y respiración. <br>
-                                Evaluación rápida de postura y eficiencia en el agua para mejorar rendimiento. <br>
-                                Duración: 1 hora.</p>
-                                <p class="fw-bold mb-1">Precio aproximado: $350 MXN por sesión</p>
-                            </div>
-                        </div>
-                        <span class="deportes font-sub">Gimnasio</span>
-                    </a>
-                </div>
-
-            </div>
-
-            <!-- 2. Título Principal y Eslogan -->
+            <!-- Eslogan -->
             <span class="badge bg-jade mb-3 px-3 py-2 text-uppercase font-sub">Tu pasión, nuestro terreno</span>
-            <h1 class="display-3 font-head fw-bold text-uppercase mb-3">
-                Contigo en todas tus facetas
-            </h1>
-            <p class="lead font-body mb-4 mx-auto text-white-50 fs-5" style="max-width: 650px;">
-                Equipamiento técnico especializado y reserva de espacios deportivos en CDMX, Edomex y Monterrey.
-            </p>
 
-            <!-- 3. Botones de Acción (CTA) -->
+            <!-- Título principal -->
+            <h1 class="display-3 font-head fw-bold text-uppercase mb-3">Contigo en todas tus facetas</h1>
+
+            <!-- Descripción -->
+            <p class="lead font-body mb-4 mx-auto text-white-50 fs-5" style="max-width: 650px;">Equipamiento técnico especializado y reserva de espacios deportivos en CDMX, Edomex y Monterrey.</p>
+
+            <!-- Botones -->
             <div class="d-flex justify-content-center gap-3 flex-wrap">
-                <a href="#newsletter" class="btn btn-rosa btn-lg rounded-pill px-4 py-3 font-head fw-bold">
-                    Suscríbete
-                </a>
-                <a href="#contacto" class="btn btn-dorado btn-lg rounded-pill px-4 py-3 font-head fw-bold">
-                    Contacto
-                </a>
+                <a href="#newsletter" class="btn btn-rosa btn-lg rounded-pill px-4 py-3 font-head fw-bold">Suscríbete</a>
+                <a href="#contacto" class="btn btn-dorado btn-lg rounded-pill px-4 py-3 font-head fw-bold">Contacto</a>
             </div>
-
-            <section class="container my-5">
-             <!-- FILA PARA RUNNING Y FÚTBOL -->
-            <div class="row g-4 my-4">
-
-            <!-- 1: CARRUSEL RUNNING (Lado Izquierdo) -->
-                <div id="running" class="col-12 col-md-6">
-                    <h3 class="fw-bold mb-3 text-uppercase text-center text-warning">Supera tus límites</h3>
-                    <div id="carouselRunning" class="carousel slide shadow-sm rounded overflow-hidden" data-bs-ride="carousel">
-                        <!-- Indicadores -->
-                        <div class="carousel-indicators">
-                            <button type="button" data-bs-target="#carouselRunning" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-                            <button type="button" data-bs-target="#carouselRunning" data-bs-slide-to="1" aria-label="Slide 2"></button>
-                            <button type="button" data-bs-target="#carouselRunning" data-bs-slide-to="2" aria-label="Slide 3"></button>
-                            <button type="button" data-bs-target="#carouselRunning" data-bs-slide-to="3" aria-label="Slide 4"></button>
-                        </div>
-
-                        <!-- Contenedor de diapositivas -->
-                        <div class="carousel-inner">
-                            <!-- 1 - Presentación Running -->
-                             <div class="carousel-item active" style="height: 450px;">
-                                <img src="./imagenes_futbol_running/01-running.png" class="d-block w-100 h-100" style="filter: brightness(40%); object-fit: cover; object-position: center center;" alt="Running">
-                                <div class="carousel-caption d-flex flex-column justify-content-center h-100 pb-5">
-                                    <h2 class="fw-bold display-6 text-uppercase text-warning"><b>RUNNING</b></h2>
-                                    <p class="fs-6 max-w-md mx-auto text-white">Conquista cada kilómetro. Encuentra el calzado perfecto, indumentaria ligera y la guía profesional para alcanzar tu mejor marca.</p>
-                                </div>
-                            </div>
-                            <!-- 2 - Producto Running A - Tenis -->
-                            <div class="carousel-item" style="height: 450px;">
-                                <img src="./imagenes_futbol_running/02-zapatos-para-correr.png" loading="lazy" class="d-block w-100 h-100" style="filter: brightness(40%); object-fit: cover; object-position: center center;" alt="Tenis de Running">
-                                <div class="carousel-caption d-flex flex-column justify-content-center h-100 pb-5">
-                                    <h4 class="fw-bold text-uppercase text-white"><b>Tenis de Running Pro</b></h4>
-                                    <p class="small max-w-md mx-auto text-white">Calzado técnico de amortiguación avanzada para asfalto y pista. Diseño ergonómico y suela de alta tracción.</p>
-                                    <p class="fw-bold mb-1 text-white">Precio aproximado: $1,899 MXN</p>
-                                    <p class="small text-white">(Consulta catálogo oficial para disponibilidad y promociones)</p>
-                                    <!--<a href="#running-section" class="btn btn-warning btn-sm px-4 rounded-pill mt-2 fw-bold">Ver Detalles</a>-->
-                                </div>
-                            </div>
-
-                             <!-- 3 - Producto Running B - Ropa Técnica -->
-                            <div class="carousel-item" style="height: 450px;">
-                                <img src="./imagenes_futbol_running/03-ropa-accesorios-para-correr.png" loading="lazy" class="d-block w-100 h-100" style="filter: brightness(40%); object-fit: cover; object-position: center center;" alt="Ropa Técnica">
-                                <div class="carousel-caption d-flex flex-column justify-content-center h-100 pb-5">
-                                    <h4 class="fw-bold text-uppercase text-white"><b>Indumentaria de Alto Rendimiento</b></h4>
-                                    <p class="small max-w-md mx-auto text-white">Tops, shorts y calcetines antirozaduras con tecnología de secado rápido para mayor frescura.</p>
-                                    <p class="fw-bold mb-1 text-white">Precio aproximado: $649 MXN</p>
-                                    <p class="small text-white">(Consulta catálogo oficial para disponibilidad y promociones)</p>
-                                    <!--<a href="#running-section" class="btn btn-warning btn-sm px-4 rounded-pill mt-2 fw-bold">Ver Detalles</a>-->
-                                </div>
-                            </div>
-
-                            <!-- 4 - Servicio Running -->
-                            <div class="carousel-item" style="height: 450px;">
-                                <img src="./imagenes_futbol_running/04-maratones-competencias.png" loading="lazy" class="d-block w-100 h-100" style="filter: brightness(40%); object-fit: cover; object-position: center center;" alt="Asesoría Running">
-                                <div class="carousel-caption d-flex flex-column justify-content-center h-100 pb-5">
-                                    <h4 class="fw-bold text-uppercase text-white"><b>Entrenamiento y Registro a Maratones</b></h4>
-                                    <p class="small max-w-md mx-auto text-white">Planes de entrenamiento personalizado según tus metas y gestión de inscripciones a competencias locales.</p>
-                                    <p class="fw-bold mb-1 text-white">Precio aproximado: $400 MXN por plan</p>
-                                    <!--<a href="#running-section" class="btn btn-warning btn-sm px-4 rounded-pill mt-2 fw-bold">Contratar</a>-->
-                                </div>
-                            </div>
-                        </div>
-                        
-                        <!-- Controles Running -->           
-                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselRunning" data-bs-slide="prev">
-                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                            <span class="visually-hidden">Anterior</span>
-                        </button>
-                        <button class="carousel-control-next" type="button" data-bs-target="#carouselRunning" data-bs-slide="next">
-                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                            <span class="visually-hidden">Siguiente</span>
-                        </button>
-                    </div>
-                </div>
-
-
-                <!-- 2: CARRUSEL FÚTBOL (Lado Derecho) -->
-                <div id="futbol" class="col-12 col-md-6">
-                    <h3 class="fw-bold mb-3 text-uppercase text-center text-success">Pasión por la cancha</h3>
-                    <div id="carouselFutbol" class="carousel slide shadow-sm rounded overflow-hidden" data-bs-ride="carousel">
-                        <!-- Indicadores -->
-                        <div class="carousel-indicators">
-                            <button type="button" data-bs-target="#carouselFutbol" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-                            <button type="button" data-bs-target="#carouselFutbol" data-bs-slide-to="1" aria-label="Slide 2"></button>
-                            <button type="button" data-bs-target="#carouselFutbol" data-bs-slide-to="2" aria-label="Slide 3"></button>
-                            <button type="button" data-bs-target="#carouselFutbol" data-bs-slide-to="3" aria-label="Slide 4"></button>
-                        </div>
-                        <!-- Contenedor de diapositivas -->
-                        <div class="carousel-inner">
-                             <!-- 1 - Presentación Fútbol (PORTADA) -->
-                             <div class="carousel-item active" style="height: 450px;">
-                                <img src="./imagenes_futbol_running/05-futbol.png" class="d-block w-100 h-100" style="filter: brightness(40%); object-fit: cover; object-position: center center;" alt="Fútbol">
-                                <div class="carousel-caption d-flex flex-column justify-content-center h-100 pb-5">
-                                    <h2 class="fw-bold display-6 text-uppercase text-success"><b>FÚTBOL</b></h2>
-                                    <p class="fs-6 max-w-md mx-auto text-white">Siente la pasión del juego. Consigue jerseys oficiales, equipamiento de alto nivel e inscríbete a los mejores torneos.</p>
-                                </div>
-                            </div>
-                            <!-- 2 - Producto Fútbol A - Jerseys -->
-                            <div class="carousel-item" style="height: 450px;">
-                                <img src="./imagenes_futbol_running/06-jerseys-camisetas.png" loading="lazy" class="d-block w-100 h-100" style="filter: brightness(40%); object-fit: cover; object-position: center center;" alt="Jerseys Oficiales">
-                                <div class="carousel-caption d-flex flex-column justify-content-center h-100 pb-5">
-                                    <h4 class="fw-bold text-uppercase text-white"><b>Jerseys Oficiales de Clubes</b></h4>
-                                    <p class="small max-w-md mx-auto text-white">Uniformes y camisetas oficiales de clubes y selecciones. Tela de alta tecnología para máxima ventilación.</p>
-                                    <p class="fw-bold mb-1 text-white">Precio aproximado: $1,299 MXN</p>
-                                    <p class="small text-white">(Consulta catálogo oficial para disponibilidad y promociones)</p>
-                                    <!--<a href="#futbol-section" class="btn btn-success btn-sm px-4 rounded-pill mt-2">Ver Detalles</a>-->
-                                </div>
-                            </div>
-                            <!-- 3 - Producto Fútbol B - Balones y Equipamiento -->
-                            <div class="carousel-item" style="height: 450px;">
-                                <img src="./imagenes_futbol_running/07-balones-equipos-proteccion.png" loading="lazy" class="d-block w-100 h-100" style="filter: brightness(40%); object-fit: cover; object-position: center center;" alt="Balones y Equipamiento">
-                                <div class="carousel-caption d-flex flex-column justify-content-center h-100 pb-5">
-                                    <h4 class="fw-bold text-uppercase text-white"><b>Balones y Protección Pro</b></h4>
-                                    <p class="small max-w-md mx-auto text-white">Balones profesionales sellados térmicamente, espinilleras ergonómicas y guantes para guardameta.</p>
-                                    <p class="fw-bold mb-1 text-white">Precio aproximado: $799 MXN</p>
-                                    <p class="small text-white">(Consulta catálogo oficial para disponibilidad y promociones)</p>
-                                    <!--<a href="#futbol-section" class="btn btn-success btn-sm px-4 rounded-pill mt-2">Ver Detalles</a>-->
-                                </div>
-                            </div>
-                            <!-- 4 - Servicio Fútbol -->
-                             <div class="carousel-item" style="height: 450px;">
-                                <img src="./imagenes_futbol_running/08-ligas-torneos-futbol.png" loading="lazy" class="d-block w-100 h-100" style="filter: brightness(40%); object-fit: cover; object-position: center center;" alt="Inscripciones a Ligas">
-                                <div class="carousel-caption d-flex flex-column justify-content-center h-100 pb-5">
-                                    <h4 class="fw-bold text-uppercase text-white"><b>Inscripción a Ligas y Torneos</b></h4>
-                                    <p class="small max-w-md mx-auto text-white">Registra a tu equipo en nuestras ligas locales. Incluye arbitraje profesional y gestión de marcadores.</p>
-                                    <p class="fw-bold mb-1 text-white">Precio aproximado: $2,500 MXN por equipo</p>
-                                    <!--<a href="#futbol-section" class="btn btn-success btn-sm px-4 rounded-pill mt-2">Inscribir Equipo</a>-->
-                                </div>
-                            </div>
-                        
-                        </div>
-
-                        <!-- Controles Fútbol -->
-                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselFutbol" data-bs-slide="prev">
-                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                            <span class="visually-hidden">Anterior</span>
-                        </button>
-                        <button class="carousel-control-next" type="button" data-bs-target="#carouselFutbol" data-bs-slide="next">
-                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                            <span class="visually-hidden">Siguiente</span>
-                        </button>
-                    </div>
-                </div>
-            
-            </div>
-        </section>
-
-
-
-    <!--PRODUCTOS POR DEPORTE-->
-    <section class="container">
-        <!-- futbol -->
-        <div class="row">Futbol</div>
-        <div class="row">
-            <div class="col product card"></div>
-            <div class="col product card"></div>
-            <div class="col product card"></div>
-            <div class="col product card"></div>
         </div>
     </section>
 
-    <!--NEWSLETTER-->
-    <section class="container">
+
+    <!-- PRODUCTOS Y SERVICIOS POR DEPORTE -->
+    <section id="productos" class="container-fluid bg-black py-5 m-0 text-white">
+        <div class="container">
+
+            <!--FILA GYM + NATACIÓN-->
+            <div class="row g-4">
+                <!--GYM-->
+                <div id="gimnasio" class="col-12 col-md-6">
+                    <h3 class="fw-bold mb-3 text-uppercase text-center" style="color: #E4007C;">Entrena mejor</h3>
+                    <div id="carouselGym" class="carousel slide shadow-sm rounded overflow-hidden" data-bs-ride="carousel">
+                        <!-- Indicadores -->
+                        <div class="carousel-indicators">
+                            <button type="button" data-bs-target="#carouselGym" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                            <button type="button" data-bs-target="#carouselGym" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                            <button type="button" data-bs-target="#carouselGym" data-bs-slide-to="2"aria-label="Slide 3"></button>
+                            <button type="button" data-bs-target="#carouselGym" data-bs-slide-to="3" aria-label="Slide 4"></button>
+                        </div>
+
+                        <!-- Diapositivas -->
+                        <div class="carousel-inner">
+                            <!-- GYM - Portada -->
+                            <div class="carousel-item active" style="height: 450px;">
+                                <img src="./imagenes_gym_natacion/01-gym.avif" class="d-block w-100 h-100" style="filter: brightness(40%); object-fit: cover; object-position: center bottom;" alt="GYM">
+                                <div class="carousel-caption d-flex flex-column justify-content-center h-100 pb-5">
+                                    <h2 class="fw-bold display-6 text-uppercase" style="color: #E4007C;">GIMNASIO</h2>
+                                    <p class="fs-6 max-w-md mx-auto"> Equípate con lo mejor. Descubre los productos destacados y pregunta por nuestro servicio de asesoría personalizada.</p>
+                                </div>
+                            </div>
+
+                            <!-- GYM - Tenis -->
+                            <div class="carousel-item" style="height: 450px;">
+                                <img src="./imagenes_gym_natacion/02-tenis.jpg" loading="lazy" class="d-block w-100 h-100" style="filter: brightness(40%); object-fit: cover; object-position: center bottom;" alt="Tenis Charly">
+                                <div class="carousel-caption d-flex flex-column justify-content-center h-100 pb-5">
+                                    <h4 class="fw-bold text-uppercase">Tenis Charly PFX Training</h4>
+                                    <p class="small max-w-md mx-auto">Calzado diseñado para entrenamiento funcional y gym. Amortiguación avanzada y suela antideslizante.</p>
+                                    <p class="fw-bold mb-1">Precio aproximado: $1,199 MXN</p>
+                                    <p>Consulta catálogo oficial para disponibilidad y promociones.</p>
+                                </div>
+                            </div>
+
+                            <!-- GYM - Playera -->
+                            <div class="carousel-item" style="height: 450px;">
+                                <img src="./imagenes_gym_natacion/03-playera.jpg"loading="lazy" class="d-block w-100 h-100" style="filter: brightness(40%); object-fit: cover; object-position: center center;" alt="Playera">
+                                <div class="carousel-caption d-flex flex-column justify-content-center h-100 pb-5">
+                                    <h4 class="fw-bold text-uppercase">Playera Pirma DryFit Gym</h4>
+                                    <p class="small max-w-md mx-auto">Prenda diseñada para entrenamiento funcional y gym. Tela DryFit transpirable que mantiene frescura durante rutinas intensas.</p>
+                                    <p class="fw-bold mb-1">Precio aproximado: $899 MXN</p>
+                                    <p>Consulta catálogo oficial para disponibilidad y promociones.</p>
+                                </div>
+                            </div>
+
+                            <!-- GYM - Servicio -->
+                            <div class="carousel-item" style="height: 450px;">
+                                <img src="./imagenes_gym_natacion/04-fuerza.avif" loading="lazy" class="d-block w-100 h-100" style="filter: brightness(40%); object-fit: cover; object-position: center center;" alt="Asesoría Personalizada">
+                                <div class="carousel-caption d-flex flex-column justify-content-center h-100 pb-5">
+                                    <h4 class="fw-bold text-uppercase">Asesoría Personalizada</h4>
+                                    <p class="small max-w-md mx-auto">Sesión guiada por expertos en rutinas de fuerza y resistencia.
+                                        <br>Incluye asesoría personalizada sobre el uso correcto de equipo.
+                                        <br>Evaluación rápida de postura y técnica para evitar lesiones.
+                                        <br>Duración: 1 hora.
+                                    </p>
+                                    <p class="fw-bold mb-1">Precio aproximado: $350 MXN por sesión</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Controles -->
+                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselGym" data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Anterior</span>
+                        </button>
+
+                        <button class="carousel-control-next" type="button" data-bs-target="#carouselGym" data-bs-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Siguiente</span>
+                        </button>
+                    </div>
+                </div>
+
+
+                <!-- NATACIÓN-->
+                <div id="natacion" class="col-12 col-md-6">
+                    <h3 class="fw-bold mb-3 text-uppercase text-center text-info">Domina tu disciplina</h3>
+                    <div id="carouselNatacion" class="carousel slide shadow-sm rounded overflow-hidden" data-bs-ride="carousel">
+
+                        <!-- Indicadores -->
+                        <div class="carousel-indicators">
+                            <button type="button" data-bs-target="#carouselNatacion" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                            <button type="button" data-bs-target="#carouselNatacion" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                            <button type="button" data-bs-target="#carouselNatacion" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                            <button type="button" data-bs-target="#carouselNatacion" data-bs-slide-to="3" aria-label="Slide 4"></button>
+                        </div>
+
+                        <!-- Diapositivas -->
+                        <div class="carousel-inner">
+                            <!-- Natación - Portada -->
+                            <div class="carousel-item active" style="height: 450px;">
+                                <img src="./imagenes_gym_natacion/05-natacion.avif" class="d-block w-100 h-100" style="filter: brightness(40%); object-fit: cover; object-position: center center;" alt="Natación">
+                                <div class="carousel-caption d-flex flex-column justify-content-center h-100 pb-5">
+                                    <h2 class="fw-bold display-5 text-uppercase text-info">Natación</h2>
+                                    <p class="fs-5 max-w-md mx-auto"> Equípate con lo mejor para tus entrenamientos acuáticos. Descubre nuestros productos destacados y recibe asesoría personalizada para elegir el equipo ideal.</p>
+                                </div>
+                            </div>
+
+                            <!-- Natación - Goggles -->
+                            <div class="carousel-item" style="height: 450px;">
+                                <img src="./imagenes_gym_natacion/06-googles.webp" loading="lazy" class="d-block w-100 h-100" style="filter: brightness(40%); object-fit: cover; object-position: center center;" alt="Goggles">
+                                <div class="carousel-caption d-flex flex-column justify-content-center h-100 pb-5">
+                                    <h4 class="fw-bold text-uppercase">Escualo Sports - Goggles Competencia UV</h4>
+                                    <p class="small max-w-md mx-auto">Accesorio diseñado para entrenamientos y competencias acuáticas. Protección contra rayos UV y ajuste ergonómico resistente al cloro.</p>
+                                    <p class="fw-bold mb-1">Precio aproximado: $450 MXN</p>
+                                    <p>Consulta catálogo oficial para disponibilidad y promociones.</p>
+                                </div>
+                            </div>
+
+
+                            <!-- Natación - Traje -->
+                            <div class="carousel-item" style="height: 450px;">
+                                <img src="./imagenes_gym_natacion/07-traje-de-baño.webp" loading="lazy" class="d-block w-100 h-100" style="filter: brightness(40%); object-fit: cover; object-position: center center;" alt="Traje de baño">
+                                <div class="carousel-caption d-flex flex-column justify-content-center h-100 pb-5"> 
+                                    <h4 class="fw-bold text-uppercase"> Grupo Maralbo (Seahorse). Traje de Baño Competencia Pro</h4>
+                                    <p class="small max-w-md mx-auto"> Traje especializado para natación deportiva y competencias. Fabricado con telas de alta compresión que mejoran la hidrodinámica en el agua. Resistente al cloro y con costuras reforzadas para mayor durabilidad en entrenamientos intensivos.</p>
+                                    <p class="fw-bold mb-1">Precio aproximado: $1,050 MXN</p>
+                                    <p>Consulta catálogo oficial para disponibilidad y promociones.</p>
+                                </div>
+                            </div>
+                            <!-- Natación - Servicio -->
+                            <div class="carousel-item" style="height: 450px;">
+                                <img src="./imagenes_gym_natacion/08-renta-alberca.avif" loading="lazy" class="d-block w-100 h-100" style="filter: brightness(40%); object-fit: cover; object-position: center center;" alt="Asesoría Personalizada">
+                                <div class="carousel-caption d-flex flex-column justify-content-center h-100 pb-5"> 
+                                    <h4 class="fw-bold text-uppercase">Asesoría Personalizada</h4>
+                                    <p class="small max-w-md mx-auto">Sesión guiada por expertos en estilos de nado y resistencia acuática.
+                                        <br>Incluye asesoría personalizada sobre la técnica de brazada y respiración.
+                                        <br>Evaluación rápida de postura y eficiencia en el agua para mejorar rendimiento.
+                                        <br>Duración: 1 hora.</p>
+                                        <p class="fw-bold mb-1">Precio aproximado: $350 MXN por sesión</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                            <!-- Controles -->
+                             <button class="carousel-control-prev" type="button" data-bs-target="#carouselNatacion" data-bs-slide="prev">
+                                <span class="carousel-control-prev-icon" aria-hidden="true"></span> 
+                                <span class="visually-hidden">Anterior</span>
+                            </button>
+                            <button class="carousel-control-next" type="button" data-bs-target="#carouselNatacion" data-bs-slide="next">
+                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Siguiente</span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- FILA RUNNING + FÚTBOL-->
+                 <div class="row g-4 my-4">
+                    <!-- RUNNING -->
+                     <div id="running" class="col-12 col-md-6">
+                        <h3 class="fw-bold mb-3 text-uppercase text-center text-warning">Supera tus límites</h3>
+                        <div id="carouselRunning" class="carousel slide shadow-sm rounded overflow-hidden" data-bs-ride="carousel">
+                            
+                            <!-- Indicadores -->
+                             <div class="carousel-indicators">
+                                <button type="button" data-bs-target="#carouselRunning" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                                <button type="button" data-bs-target="#carouselRunning" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                                <button type="button" data-bs-target="#carouselRunning" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                                <button type="button" data-bs-target="#carouselRunning" data-bs-slide-to="3" aria-label="Slide 4"></button>
+                            </div>
+                            
+                            <!-- Diapositivas -->
+                             <div class="carousel-inner">
+                                
+                                <!-- Running - Portada -->
+                                 <div class="carousel-item active" style="height: 450px;">
+                                    <img src="./imagenes_futbol_running/01-running.png" class="d-block w-100 h-100" style="filter: brightness(40%); object-fit: cover; object-position: center center;" alt="Running">
+                                    <div class="carousel-caption d-flex flex-column justify-content-center h-100 pb-5">
+                                        <h2 class="fw-bold display-6 text-uppercase text-warning">RUNNING</h2>
+                                        <p class="fs-6 max-w-md mx-auto text-white">Conquista cada kilómetro. Encuentra el calzado perfecto, indumentaria ligera y la guía profesional para alcanzar tu mejor marca.</p>
+                                    </div>
+                                </div>
+                                
+                                <!-- Running - Tenis -->
+                                 <div class="carousel-item" style="height: 450px;"> 
+                                    <img src="./imagenes_futbol_running/02-zapatos-para-correr.png" loading="lazy" class="d-block w-100 h-100" style="filter: brightness(40%); object-fit: cover; object-position: center center;" alt="Tenis de Running">
+                                    <div class="carousel-caption d-flex flex-column justify-content-center h-100 pb-5">
+                                        <h4 class="fw-bold text-uppercase text-white">Tenis de Running Pro</h4>
+                                        <p class="small max-w-md mx-auto text-white">Calzado técnico de amortiguación avanzada para asfalto y pista. Diseño ergonómico y suela de alta tracción.</p>
+                                        <p class="fw-bold mb-1 text-white">Precio desde: $1,899 MXN</p>
+                                    </div>
+                                </div>
+                                
+                                <!-- Running - Ropa -->
+                                 <div class="carousel-item" style="height: 450px;">
+                                    <img src="./imagenes_futbol_running/03-ropa-accesorios-para-correr.png" loading="lazy" class="d-block w-100 h-100" style="filter: brightness(40%); object-fit: cover; object-position: center center;" alt="Ropa Técnica">
+                                    <div class="carousel-caption d-flex flex-column justify-content-center h-100 pb-5">
+                                        <h4 class="fw-bold text-uppercase text-white">Indumentaria de Alto Rendimiento</h4>
+                                        <p class="small max-w-md mx-auto text-white">Tops, shorts y calcetines antirozaduras con tecnología de secado rápido para mayor frescura.</p>
+                                        <p class="fw-bold mb-1 text-white">Precio desde: $649 MXN</p>
+                                    </div>
+                                </div>
+                                
+                                <!-- Running - Servicio -->
+                                 <div class="carousel-item" style="height: 450px;">
+                                    <img src="./imagenes_futbol_running/04-maratones-competencias.png" loading="lazy" class="d-block w-100 h-100" style="filter: brightness(40%); object-fit: cover; object-position: center center;" alt="Asesoría Running">
+                                    <div class="carousel-caption d-flex flex-column justify-content-center h-100 pb-5">
+                                        <h4 class="fw-bold text-uppercase text-white">Entrenamiento y Registro a Maratones</h4>
+                                        <p class="small max-w-md mx-auto text-white">Planes de entrenamiento personalizado según tus metas y gestión de inscripciones a competencias locales.</p>
+                                        <p class="fw-bold mb-1 text-white">Precio desde: $400 MXN por plan</p>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <!-- Controles -->
+                             <button class="carousel-control-prev" type="button" data-bs-target="#carouselRunning" data-bs-slide="prev">
+                                <span class="carousel-control-prev-icon" aria-hidden="true"></span> 
+                                <span class="visually-hidden">Anterior</span>
+                            </button> 
+                            <button class="carousel-control-next" type="button" data-bs-target="#carouselRunning" data-bs-slide="next">
+                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Siguiente</span>
+                            </button>
+                        </div>
+                    </div>
+                    
+                    <!--FÚTBOL -->
+                    <div id="futbol" class="col-12 col-md-6">
+                        <h3 class="fw-bold mb-3 text-uppercase text-center text-success">Pasión por la cancha</h3>
+                        <div id="carouselFutbol" class="carousel slide shadow-sm rounded overflow-hidden" data-bs-ride="carousel">
+                            <!-- Indicadores -->
+                             <div class="carousel-indicators">
+                                <button type="button" data-bs-target="#carouselFutbol" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                                <button type="button" data-bs-target="#carouselFutbol" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                                <button type="button" data-bs-target="#carouselFutbol" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                                <button type="button" data-bs-target="#carouselFutbol" data-bs-slide-to="3" aria-label="Slide 4"></button>
+                            </div>
+                            
+                            <!-- Diapositivas -->
+                             <div class="carousel-inner">
+                                
+                                <!-- Fútbol - Portada -->
+                                 <div class="carousel-item active" style="height: 450px;">
+                                    <img src="./imagenes_futbol_running/05-futbol.png" class="d-block w-100 h-100" style="filter: brightness(40%); object-fit: cover; object-position: center center;" alt="Fútbol">
+                                    <div class="carousel-caption d-flex flex-column justify-content-center h-100 pb-5">
+                                        <h2 class="fw-bold display-6 text-uppercase text-success">FÚTBOL</h2>
+                                        <p class="fs-6 max-w-md mx-auto text-white">Siente la pasión del juego. Consigue jerseys oficiales, equipamiento de alto nivel e inscríbete a los mejores torneos.</p>
+                                    </div>
+                                </div>
+                                
+                                <!-- Fútbol - Jerseys -->
+                                 <div class="carousel-item" style="height: 450px;">
+                                    <img src="./imagenes_futbol_running/06-jerseys-camisetas.png" loading="lazy" class="d-block w-100 h-100" style="filter: brightness(40%); object-fit: cover; object-position: center center;" alt="Jerseys Oficiales">
+                                    <div class="carousel-caption d-flex flex-column justify-content-center h-100 pb-5">
+                                        <h4 class="fw-bold text-uppercase text-white">Jerseys Oficiales de Clubes</h4>
+                                        <p class="small max-w-md mx-auto text-white">Uniformes y camisetas oficiales de clubes y selecciones. Tela de alta tecnología para máxima ventilación.</p>
+                                        <p class="fw-bold mb-1 text-white">Precio desde: $1,299 MXN</p>
+                                    </div>
+                                </div>
+                                
+                                <!-- Fútbol - Balones -->
+                                 <div class="carousel-item" style="height: 450px;"> 
+                                    <img src="./imagenes_futbol_running/07-balones-equipos-proteccion.png" loading="lazy" class="d-block w-100 h-100" style="filter: brightness(40%); object-fit: cover; object-position: center center;" alt="Balones y Equipamiento">
+                                    <div class="carousel-caption d-flex flex-column justify-content-center h-100 pb-5"> 
+                                        <h4 class="fw-bold text-uppercase text-white">Balones y Protección Pro</h4>
+                                        <p class="small max-w-md mx-auto text-white">Balones profesionales sellados térmicamente, espinilleras ergonómicas y guantes para guardameta.</p>
+                                        <p class="fw-bold mb-1 text-white">Precio desde: $799 MXN</p>
+                                    </div>
+                                </div>
+                                
+                                <!-- Fútbol - Servicio -->
+                                 <div class="carousel-item" style="height: 450px;">
+                                    <img src="./imagenes_futbol_running/08-ligas-torneos-futbol.png" loading="lazy" class="d-block w-100 h-100" style="filter: brightness(40%); object-fit: cover; object-position: center center;" alt="Inscripciones a Ligas"> 
+                                    <div class="carousel-caption d-flex flex-column justify-content-center h-100 pb-5">
+                                        <h4 class="fw-bold text-uppercase text-white">Inscripción a ligas y torneos</h4>
+                                        <p class="small max-w-md mx-auto text-white">Registra a tu equipo en nuestras ligas locales. Incluye arbitraje profesional y gestión de marcadores.</p>
+                                        <p class="fw-bold mb-1 text-white">Precio aproximado: $2,500 MXN por equipo</p>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <!-- Controles -->
+                             <button class="carousel-control-prev" type="button" data-bs-target="#carouselFutbol" data-bs-slide="prev">
+                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Anterior</span>
+                            </button> 
+                            <button class="carousel-control-next" type="button"data-bs-target="#carouselFutbol" data-bs-slide="next">
+                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Siguiente</span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <!--PRODUCTOS POR DEPORTE -->
+
+
+    <!-- NEWSLETTER -->
+    <section id="newsletter" class="container py-5">
+
         <div class="row newsletter-row">
 
         </div>
+
     </section>
 
-    <!-- FOOTER-->
-    <footer class="container">
-        <div class="row footer-row">
+
+    <!-- COMUNIDAD -->
+    <section id="comunidad" class="container py-5">
+
+        <div class="row">
+
+            <div class="col text-center">
+
+                <h2 class="text-uppercase fw-bold">
+                    Comunidad
+                </h2>
+
+                <p>
+                    Forma parte de nuestra comunidad deportiva.
+                </p>
+
+            </div>
 
         </div>
+
+    </section>
+
+
+    <!-- CONTACTO-->
+    <section id="contacto" class="container py-5">
+
+        <div class="row">
+
+            <div class="col text-center">
+
+                <h2 class="text-uppercase fw-bold">
+                    Contacto
+                </h2>
+
+                <p>
+                    Ponte en contacto con Tierra Deportiva.
+                </p>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- FOOTER-->
+    <footer class="container py-4">
+
+        <div class="row footer-row">
+
+            <div class="col text-center">
+                <p class="mb-0">
+                    &copy; 2026 Tierra Deportiva. Todos los derechos reservados.
+                </p>
+            </div>
+
+        </div>
+
     </footer>
 
+    <!-- JavaScript personalizado -->
     <script src="./JS/main.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
-        crossorigin="anonymous"></script>
+
+    <!-- Bootstrap JavaScript -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+
 </body>
 
 </html>
