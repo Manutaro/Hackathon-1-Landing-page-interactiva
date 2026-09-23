@@ -1,3 +1,4 @@
+
 // JS para carruseles
 // Se detienen al poner el cursor en la imagen y ya no avanzan
 const carousels = document.querySelectorAll('.carousel');
